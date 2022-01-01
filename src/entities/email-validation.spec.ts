@@ -1,6 +1,11 @@
 import { Email } from './email'
 
 describe('Email validation', () => {
+  test('should accept an email', () => {
+    const email = 'any@mail.com'
+    expect(Email.validate(email)).toBeTruthy()
+  })
+
   test('should not accept null string', () => {
     const email = null
     expect(Email.validate(email)).toBeFalsy()
