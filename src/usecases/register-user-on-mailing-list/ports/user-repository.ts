@@ -1,4 +1,4 @@
-import { UserData } from '../user-date'
+import { UserData } from '../../../entities/user-date'
 
 export interface UserRepository {
   add(user: UserData): Promise<void>
